@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.set('view engine','ejs');
 
 app.get('/', function (req,res){
-  res.render('index',{weather:null,error:'error'});
+  res.render('index',{weather:null,error:null});
 })
 app.post('/',function(req,res){
   let city =req.body.city;
