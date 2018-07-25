@@ -31,7 +31,7 @@ app.post('/',function(req,res){
     }
 });
 })
-
+const PORT = process.env.PORT;
 app.listen(3000,function(err){
   if (err){
     console.log(err);
