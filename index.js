@@ -1,6 +1,7 @@
 const express = require('express');
 const request = require('request');
 const bodyParser =require('body-parser');
+const PORT = process.env.PORT;
 let app =express();
 let apikey ='703c71ff250bfd14be54fed789db2656';
 
@@ -31,8 +32,8 @@ app.post('/',function(req,res){
     }
 });
 })
-const PORT = process.env.PORT;
-app.listen(3000,function(err){
+
+app.listen(PORT,function(err){
   if (err){
     console.log(err);
   }else{
